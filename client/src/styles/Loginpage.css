@@ -39,3 +39,52 @@
 .login-form a:hover {
   color: black !important;
 }
+
+/* Media Queries */
+
+/* Tablets and below (up to 768px) */
+@media (max-width: 768px) {
+  .login-form {
+    padding: 20px;
+    margin-left: 0;
+  }
+
+  .login-form h1 {
+    margin: 20px;
+    font-size: 24px; /* Smaller font size */
+  }
+}
+
+/* Large Phones (up to 600px) */
+@media (max-width: 600px) {
+  .login-page {
+    box-shadow: none; /* Remove shadow to suit smaller screens */
+  }
+
+  .login-form {
+    background-color: #b9bcccb6;
+    padding: 15px;
+  }
+
+  .login-form h1 {
+    margin: 15px 0;
+    font-size: 20px; /* Even smaller font size */
+  }
+}
+
+/* Small Phones (up to 480px) */
+@media (max-width: 480px) {
+  .login-form {
+    padding: 10px;
+    margin: 0; /* Adjust margins for very small screens */
+  }
+
+  .login-form h1 {
+    font-size: 18px; /* Adjust for readability on small screens */
+  }
+
+  .login-form button,
+  .login-form a {
+    font-size: 14px; /* Smaller text for buttons and links */
+  }
+}

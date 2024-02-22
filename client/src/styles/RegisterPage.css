@@ -40,3 +40,25 @@
   background-color: black;
   color: white;
 }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .register-form {
+    width: 50%; /* Adjust width for tablets */
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .register-form {
+    width: 70%; /* Adjust width for small devices */
+  }
+}
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .register-form {
+    width: 90%; /* Adjust width for extra small devices */
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+}

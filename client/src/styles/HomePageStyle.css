@@ -7,6 +7,9 @@
   padding: 20px;
   background-color: #f4f4f4;
   margin-bottom: 20px;
+  /* margin: 20px; */
+  width: 100%;
+  margin: 20px auto;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -51,6 +54,8 @@
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  height: auto;
 }
 
 .ant-table-wrapper {
@@ -157,5 +162,21 @@
 
   .content {
     padding: 25px; /* Increase content area padding */
+  }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filters > div {
+    width: 100%; /* Makes each div take full width */
+  }
+
+  .filters .switch-icons {
+    justify-content: center;
   }
 }
