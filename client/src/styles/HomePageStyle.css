@@ -1,0 +1,161 @@
+/* HomePageStyles.css */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.filters > div {
+  margin: 10px;
+}
+
+.filters h6 {
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.switch-icons {
+  display: flex;
+  align-items: center;
+}
+
+.active-icon {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.inactive-icon {
+  color: #ccc;
+  cursor: pointer;
+}
+
+.content {
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.ant-table-wrapper {
+  overflow-x: auto;
+}
+
+.ant-modal-footer {
+  display: none;
+}
+
+.ant-form-item {
+  margin-bottom: 16px;
+}
+
+/* Additional styling for inputs and selects */
+.ant-input,
+.ant-select-selector {
+  border-radius: 4px !important;
+}
+
+/* Customizing ant design components directly can be tricky,
+     ensure these styles don't conflict with other elements */
+.ant-picker,
+.ant-select {
+  width: 100%;
+}
+
+/* Styling for actions icons */
+.mx-2 {
+  margin: 0 8px;
+  color: #333;
+  cursor: pointer;
+}
+
+.mx-2:hover {
+  color: #007bff;
+}
+
+/* Base styles */
+/* ... Your existing CSS here ... */
+
+/* Tablet devices (portrait) */
+@media (max-width: 768px) {
+  .filters {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filters > div {
+    width: 100%; /* Full width for better usability */
+  }
+
+  .switch-icons {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .content {
+    padding: 15px; /* Slightly reduce padding */
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 576px) {
+  .filters {
+    padding: 10px;
+  }
+
+  .filters h6 {
+    font-size: 14px; /* Smaller text on small devices */
+  }
+
+  .btn-primary,
+  .ant-btn-primary {
+    font-size: 14px; /* Adjust button font size */
+    padding: 6px 12px; /* Reduce button padding */
+  }
+
+  .active-icon,
+  .inactive-icon {
+    font-size: 16px; /* Adjust icon size if necessary */
+  }
+
+  .content {
+    padding: 10px;
+  }
+
+  .ant-table-wrapper {
+    padding: 0 5px; /* Adjust table padding on small screens */
+  }
+
+  /* Adjust form item layout for small screens */
+  .ant-form-item {
+    margin-bottom: 12px;
+  }
+}
+
+/* Large screens */
+@media (min-width: 992px) {
+  /* Styles for large screens if needed */
+  .filters {
+    padding: 20px 30px; /* Increase padding */
+  }
+
+  .content {
+    padding: 25px; /* Increase content area padding */
+  }
+}
